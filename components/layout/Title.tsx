@@ -72,7 +72,7 @@ const Title = (): JSX.Element => {
       {/* TITLE */}
       <Link passHref href='/'>
         <a>
-          <h1 className='absolute top-0 items-end justify-center invisible hidden text-5xl font-semibold origin-left -translate-x-1/2 index-title left-1/2 sm:flex text-slate-700 dark:text-slate-300'>
+          <h1 className='absolute top-0 items-center justify-center invisible hidden text-5xl font-semibold origin-left -translate-x-1/2 index-title left-1/2 sm:flex text-slate-700 dark:text-slate-300'>
             <div className='w-16 h-16'>
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 200.00 200.00">
               <path fill="#f05011" d="
