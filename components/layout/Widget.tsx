@@ -24,7 +24,7 @@ const WidgetConverter = ({
   return (
     <div className='flex flex-col items-center justify-center gap-4 w-44'>
       <div className='flex flex-col items-center gap-4'>
-        <h2 className='text-lg font-semibold'>{helperName}</h2>
+        <h2 className='text-lg font-semibold'>Tailwind {helperName}</h2>
       </div>
       {children}
     </div>
