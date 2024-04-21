@@ -44,17 +44,18 @@ const Footer = ({ isDark }: Props): JSX.Element => {
         
       </div>
       <div>
-        <!-- Google tag (gtag.js) -->
-        <script 
-          async 
-          src="https://www.googletagmanager.com/gtag/js?id=G-21VX4FQRMX"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-21VX4FQRMX');
-        </script>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-21VX4FQRMX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-21VX4FQRMX');
+            `,
+          }}
+        />
       </div>
     </footer>
   )
