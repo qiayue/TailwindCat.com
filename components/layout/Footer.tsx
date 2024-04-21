@@ -41,21 +41,20 @@ const Footer = ({ isDark }: Props): JSX.Element => {
           </a>
         </div>
 
-        {/* PRODUCT HUNT */}
-        <a
-          href='https://www.producthunt.com/posts/tailwind-helper?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tailwind-helper'
-          target='_blank'
-          rel='noreferrer'>
-          <img
-            src={`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=355963&theme=${
-              isDark ? 'dark' : 'neutral'
-            }`}
-            alt='Tailwind Helper - Convert and visualize your tailwind classes  | Product Hunt'
-            className='transition-opacity dark:opacity-60 opacity-70 saturate-200 dark:hover:opacity-90 hover:opacity-90 w-52 dark:hue-rotate-[290deg] dark:brightness-150'
-            // width='210'
-            // height='54'
-          />
-        </a>
+        
+      </div>
+      <div>
+        <!-- Google tag (gtag.js) -->
+        <script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-21VX4FQRMX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-21VX4FQRMX');
+        </script>
       </div>
     </footer>
   )
